@@ -7,5 +7,5 @@ const interviewerSchema=new Schema({
     currentCompany:{type:String, default:''},
 })
 
-const Interviewer=mongoose.model('Interviewer',interviewerSchema);
+const Interviewer=User.discriminator('Interviewer',interviewerSchema);
 module.exports=Interviewer;
