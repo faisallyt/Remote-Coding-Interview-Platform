@@ -45,6 +45,8 @@ const newProblem = new Problem({
 
 newProblem.save()
   .then(() => console.log('Problem saved successfully'))
-  .catch(err => console.error('Error saving problem:', err));
+  .catch(err => console.error('Error saving the problem:', err));
+
+  
 
 
